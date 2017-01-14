@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		147939551E29D09E0025FBFC /* thatsok.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1479394B1E29D09E0025FBFC /* thatsok.framework */; };
+		147939551E29D09E0025FBFC /* ThatsOK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1479394B1E29D09E0025FBFC /* ThatsOK.framework */; };
 		1479395A1E29D09E0025FBFC /* thatsokTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147939591E29D09E0025FBFC /* thatsokTests.swift */; };
-		1479395C1E29D09E0025FBFC /* thatsok.h in Headers */ = {isa = PBXBuildFile; fileRef = 1479394E1E29D09E0025FBFC /* thatsok.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1479395C1E29D09E0025FBFC /* ThatsOK.h in Headers */ = {isa = PBXBuildFile; fileRef = 1479394E1E29D09E0025FBFC /* ThatsOK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		14B8D7641E2A02C900E2D7B0 /* OKAssert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B8D7631E2A02C900E2D7B0 /* OKAssert.swift */; };
+		14CE510C1E2A0541008E380B /* ThatsOK.h in Headers */ = {isa = PBXBuildFile; fileRef = 1479394E1E29D09E0025FBFC /* ThatsOK.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +25,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1479394B1E29D09E0025FBFC /* thatsok.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = thatsok.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1479394E1E29D09E0025FBFC /* thatsok.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = thatsok.h; sourceTree = "<group>"; };
+		1479394B1E29D09E0025FBFC /* ThatsOK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ThatsOK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1479394E1E29D09E0025FBFC /* ThatsOK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThatsOK.h; sourceTree = "<group>"; };
 		1479394F1E29D09E0025FBFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		147939541E29D09E0025FBFC /* thatsokTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = thatsokTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		147939591E29D09E0025FBFC /* thatsokTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = thatsokTests.swift; sourceTree = "<group>"; };
 		1479395B1E29D09E0025FBFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14B1F88A1E29FFE300383013 /* ThatsOK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ThatsOK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		14B8D7631E2A02C900E2D7B0 /* OKAssert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OKAssert.swift; path = Source/OKAssert.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +47,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				147939551E29D09E0025FBFC /* thatsok.framework in Frameworks */,
+				147939551E29D09E0025FBFC /* ThatsOK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14B1F8861E29FFE300383013 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,8 +73,9 @@
 		1479394C1E29D09E0025FBFC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1479394B1E29D09E0025FBFC /* thatsok.framework */,
+				1479394B1E29D09E0025FBFC /* ThatsOK.framework */,
 				147939541E29D09E0025FBFC /* thatsokTests.xctest */,
+				14B1F88A1E29FFE300383013 /* ThatsOK.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,7 +83,8 @@
 		1479394D1E29D09E0025FBFC /* thatsok */ = {
 			isa = PBXGroup;
 			children = (
-				1479394E1E29D09E0025FBFC /* thatsok.h */,
+				1479394E1E29D09E0025FBFC /* ThatsOK.h */,
+				14B8D7631E2A02C900E2D7B0 /* OKAssert.swift */,
 				1479394F1E29D09E0025FBFC /* Info.plist */,
 			);
 			path = thatsok;
@@ -93,16 +106,24 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1479395C1E29D09E0025FBFC /* thatsok.h in Headers */,
+				1479395C1E29D09E0025FBFC /* ThatsOK.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14B1F8871E29FFE300383013 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14CE510C1E2A0541008E380B /* ThatsOK.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1479394A1E29D09E0025FBFC /* thatsok */ = {
+		1479394A1E29D09E0025FBFC /* thatsok-macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1479395F1E29D09E0025FBFC /* Build configuration list for PBXNativeTarget "thatsok" */;
+			buildConfigurationList = 1479395F1E29D09E0025FBFC /* Build configuration list for PBXNativeTarget "thatsok-macOS" */;
 			buildPhases = (
 				147939461E29D09E0025FBFC /* Sources */,
 				147939471E29D09E0025FBFC /* Frameworks */,
@@ -113,9 +134,9 @@
 			);
 			dependencies = (
 			);
-			name = thatsok;
+			name = "thatsok-macOS";
 			productName = thatsok;
-			productReference = 1479394B1E29D09E0025FBFC /* thatsok.framework */;
+			productReference = 1479394B1E29D09E0025FBFC /* ThatsOK.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		147939531E29D09E0025FBFC /* thatsokTests */ = {
@@ -135,6 +156,24 @@
 			productName = thatsokTests;
 			productReference = 147939541E29D09E0025FBFC /* thatsokTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		14B1F8891E29FFE300383013 /* thatsok-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14B1F88F1E29FFE300383013 /* Build configuration list for PBXNativeTarget "thatsok-iOS" */;
+			buildPhases = (
+				14B1F8851E29FFE300383013 /* Sources */,
+				14B1F8861E29FFE300383013 /* Frameworks */,
+				14B1F8871E29FFE300383013 /* Headers */,
+				14B1F8881E29FFE300383013 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "thatsok-iOS";
+			productName = "thatsok-iOS";
+			productReference = 14B1F88A1E29FFE300383013 /* ThatsOK.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -156,6 +195,12 @@
 						DevelopmentTeam = Y4JDRD37Q9;
 						ProvisioningStyle = Automatic;
 					};
+					14B1F8891E29FFE300383013 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = Y4JDRD37Q9;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 147939451E29D09E0025FBFC /* Build configuration list for PBXProject "thatsok" */;
@@ -170,7 +215,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1479394A1E29D09E0025FBFC /* thatsok */,
+				14B1F8891E29FFE300383013 /* thatsok-iOS */,
+				1479394A1E29D09E0025FBFC /* thatsok-macOS */,
 				147939531E29D09E0025FBFC /* thatsokTests */,
 			);
 		};
@@ -185,6 +231,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		147939521E29D09E0025FBFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14B1F8881E29FFE300383013 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -209,12 +262,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		14B1F8851E29FFE300383013 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14B8D7641E2A02C900E2D7B0 /* OKAssert.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		147939571E29D09E0025FBFC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1479394A1E29D09E0025FBFC /* thatsok */;
+			target = 1479394A1E29D09E0025FBFC /* thatsok-macOS */;
 			targetProxy = 147939561E29D09E0025FBFC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -330,8 +391,9 @@
 				INFOPLIST_FILE = thatsok/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = thatsok/module.modulemap;
 				PRODUCT_BUNDLE_IDENTIFIER = se.wildbrain.thatsok;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ThatsOK;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
@@ -351,8 +413,9 @@
 				INFOPLIST_FILE = thatsok/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = thatsok/module.modulemap;
 				PRODUCT_BUNDLE_IDENTIFIER = se.wildbrain.thatsok;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ThatsOK;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
@@ -384,6 +447,58 @@
 			};
 			name = Release;
 		};
+		14B1F8901E29FFE300383013 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Y4JDRD37Q9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = thatsok/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = thatsok/module.modulemap;
+				PRODUCT_BUNDLE_IDENTIFIER = se.wildbrain.thatsok;
+				PRODUCT_NAME = ThatsOK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		14B1F8911E29FFE300383013 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Y4JDRD37Q9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = thatsok/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = thatsok/module.modulemap;
+				PRODUCT_BUNDLE_IDENTIFIER = se.wildbrain.thatsok;
+				PRODUCT_NAME = ThatsOK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -396,13 +511,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1479395F1E29D09E0025FBFC /* Build configuration list for PBXNativeTarget "thatsok" */ = {
+		1479395F1E29D09E0025FBFC /* Build configuration list for PBXNativeTarget "thatsok-macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				147939601E29D09E0025FBFC /* Debug */,
 				147939611E29D09E0025FBFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		147939621E29D09E0025FBFC /* Build configuration list for PBXNativeTarget "thatsokTests" */ = {
 			isa = XCConfigurationList;
@@ -411,6 +527,16 @@
 				147939641E29D09E0025FBFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14B1F88F1E29FFE300383013 /* Build configuration list for PBXNativeTarget "thatsok-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14B1F8901E29FFE300383013 /* Debug */,
+				14B1F8911E29FFE300383013 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

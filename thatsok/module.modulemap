@@ -1,0 +1,6 @@
+framework module ThatsOK {
+	umbrella header "ThatsOK.h"
+	
+	export *
+	module * { export * }
+}
