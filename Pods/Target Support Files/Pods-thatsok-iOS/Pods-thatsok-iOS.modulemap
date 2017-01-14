@@ -1,0 +1,6 @@
+framework module Pods_thatsok_iOS {
+  umbrella header "Pods-thatsok-iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
